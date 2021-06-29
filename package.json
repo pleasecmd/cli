@@ -1,0 +1,50 @@
+{
+  "name": "@please.dev/cli",
+  "version": "0.3.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepack": "node ./scripts/prepack.js",
+    "pack": "npx pkg --no-bytecode --public-packages \"*\" --public .",
+    "postpack": "node ./scripts/postpack.js",
+    "lint:check": "prettier --check . && eslint .",
+    "lint:fix": "prettier --write ."
+  },
+  "bin": {
+    "please": "index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^17.0.1",
+    "@please.dev/lib": "^0.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "pkg": "^5.3.0",
+    "prettier": "^2.3.1"
+  },
+  "pkg": {
+    "targets": [
+      "latest-linux-arm64",
+      "latest-linux-x64",
+      "latest-alpine-arm64",
+      "latest-alpine-x64",
+      "latest-win-arm64",
+      "latest-win-x64",
+      "latest-macos-arm64",
+      "latest-macos-x64"
+    ],
+    "outputPath": "dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pleasecmd/please.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pleasecmd/please/issues"
+  },
+  "homepage": "https://please.dev"
+}
