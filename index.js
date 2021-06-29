@@ -1,3 +1,4 @@
-const {cli} = require("./cli")
+#!/usr/bin/env node
+const { cli } = require("./cli");
 
-cli()
+cli();
