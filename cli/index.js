@@ -10,10 +10,10 @@ const main = {
   command: "$0 <command>",
   describe: "command to run",
   builder: {
-    "no-update": {
-      describe: "Disable repo updates",
+    update: {
+      describe: "Enable repo updates",
       type: "boolean",
-      alias: "U",
+      alias: "u",
     },
     log: {
       describe: "Log level verbosity",

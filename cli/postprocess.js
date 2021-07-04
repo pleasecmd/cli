@@ -10,8 +10,7 @@ const postprocess = (args) => {
   processed.silentRun = processed.silent || args["silent-run"];
   processed.silentInstall = processed.silent || args["silent-install"];
   processed.verbose = args.verbose;
-  if (args["no-update"]) processed.update = false;
-  if (processed.silent) processed.log = 0;
+  processed.update = args.update;
   processed.log = args.log;
   processed.command = args.command;
   return removeUndefined(processed);
