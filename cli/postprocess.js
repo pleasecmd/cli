@@ -13,6 +13,7 @@ const postprocess = (args) => {
   processed.update = args.update;
   processed.log = args.log;
   processed.command = args.command;
+  processed.allowUnsafe = args["allow-unsafe"];
   return removeUndefined(processed);
 };
 

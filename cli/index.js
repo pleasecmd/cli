@@ -40,6 +40,11 @@ const main = {
       type: "boolean",
       alias: "I",
     },
+    "allow-unsafe": {
+      describe: "Allow unsafe installs",
+      type: "boolean",
+      alias: "a",
+    },
   },
   handler(args) {
     const argv = postprocess(args);
