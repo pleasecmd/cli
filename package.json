@@ -19,7 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "yargs": "^17.0.1",
-    "@please.dev/lib": "^0.5.2"
+    "@please.dev/lib": "^0.5.3"
   },
   "devDependencies": {
     "eslint": "^7.29.0",
