@@ -36,7 +36,7 @@ const main = {
       alias: "s",
     },
     "silent-install": {
-      describe: "Silence all install logs",
+      describe: "Silence install logs",
       type: "boolean",
       alias: "I",
     },
