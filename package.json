@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepack": "node ./scripts/prepack.js",
-    "pack": "pkg --no-bytecode --public-packages \"*\" --public .",
+    "pack": "npm i && pkg --no-bytecode --public-packages \"*\" --public .",
     "postpack": "node ./scripts/postpack.js",
     "lint:check": "prettier --check . && eslint .",
     "lint:fix": "prettier --write ."
@@ -19,7 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "yargs": "^17.0.1",
-    "@please.dev/lib": "^0.6.1"
+    "@please.dev/lib": "^0.6.2"
   },
   "devDependencies": {
     "eslint": "^7.29.0",
